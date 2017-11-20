@@ -1,0 +1,591 @@
+<html>
+<head>
+	<title>Next Annie Rehearsal</title>
+	<style>
+		
+		.DateDiv { 
+			display: none; 
+			color: indigo;
+		}
+		.div {
+			color: blue;
+		}
+		.staticContent {
+			padding: 20;
+			font-size: 4rem;
+			color: #424242;
+		}
+		.dateDisplay {
+			padding: 5;
+			Font-size: 5rem;
+			font-weight: bold;
+		}
+		.requiredDisplay {
+			padding: 5;
+			Font-size: 5rem;
+			font-weight: bold;
+		}
+		body {
+			text-align: center;
+			Font-family: Verdana, Geneva, sans-serif;
+			Font-size: 4rem;
+			position: relative;
+			display:none;
+		}
+		.heading {
+			Font-size: 6rem;
+			font-weight: bold;
+			color: #343434;
+			padding: 5%;
+		}
+		@media (min-width: 858px) {
+			html {
+				font-size: 12px;
+			}
+		}
+
+		@media (min-width: 780px) {
+			html {
+				font-size: 11px;
+			}
+		}
+
+		@media (min-width: 702px) {
+			html {
+				font-size: 10px;
+			}
+		}
+
+		@media (min-width: 724px) {
+			html {
+				font-size: 9px;
+			}
+		}
+
+		@media (max-width: 623px) {
+			html {
+				font-size: 8px;
+			}
+		}
+	</style>
+	<link rel="icon" href="favicon.ico" type="image/ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="application/javascript">
+	var months = ["January", "February","March","April","May","June","July","August","September","October","November","December"];
+	var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+	function formatDate(_date){
+		var dt = "";
+		dt += days[_date.getDay()] + " " + _date.getDate() + " " + months[_date.getMonth()] + " " + _date.getFullYear();
+		var hours = _date.getHours();
+		var minutes = ("0" + _date.getMinutes()).slice(-2);
+		var suffix = hours >= 12 ? "pm":"am"; dt += " at " + (((hours + 11) % 12) + 1) + ":" + minutes + suffix;
+		return dt;
+	}
+	
+	$(function() {
+
+		$(".DateDiv").each(function(index) {
+			var dt = new Date($(this).attr("date"));
+			var dtNow = new Date();
+			if (dtNow <= dt){
+			$(this).find(".dateDisplay").html(formatDate(dt));
+			   $(this).show();
+			   $("#defaultDate").hide();
+			   return false;
+			}
+		});
+		$("body").show();
+	});
+
+
+	</script>
+</head>
+<body>
+	<!-- CHECK WHEN REHEARSALS GO TO 2 ON SUNDAYS -->
+	<div class="heading">
+	Kirwee Players Annie JR Cast 2017/2018
+	</div>
+	<div class="staticContent">
+	The next Annie JR rehearsal is on
+	</div>
+	<div id="calendarContent">
+		<div class="DateDiv" date="13 Dec 2017 19:30 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="DateDiv" date="24 Jan 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="DateDiv" date="25 Jan 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					Annie
+					Oliver Warbucks
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="DateDiv" date="28 Jan 2018 16:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="31 Jan 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="1 Feb 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="4 Feb 2018 16:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="7 Feb 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="8 Feb 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="11 Feb 2018 16:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="14 Feb 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="15 Feb 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="18 Feb 2018 16:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="21 Feb 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="22 Feb 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="25 Feb 2018 14:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="28 Feb 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="1 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="4 Mar 2018 14:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="7 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="8 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="11 Mar 2018 14:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="14 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="15 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="18 Mar 2018 14:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="21 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="22 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="25 Mar 2018 14:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="28 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+				
+		
+		<div class="DateDiv" date="29 Mar 2018 18:00 GMT+1300">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="1 Apr 2018 14:00 GMT+1200">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="2 Apr 2018 14:00 GMT+1200">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="DateDiv" date="3 Apr 2018 18:00 GMT+1200">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+						
+		
+		<div class="DateDiv" date="4 Apr 2018 18:00 GMT+1200">
+			<div class="dateDisplay"></div>
+			<div class="PeopleRequiredDiv">
+				<div class="staticContent">
+					People Required:
+				</div>
+				<div class="requiredDisplay">
+					All Cast and Parents
+					Directing Team
+				</div>
+			</div>
+		</div>
+		
+		<div id="defaultDate">
+		No more rehearsals!
+		</div>
+		
+	</div>
+
+</body>
