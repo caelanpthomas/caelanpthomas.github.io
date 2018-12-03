@@ -20,9 +20,9 @@ var rehearsals = [	/*{rehearsal_start_time: new Date(2019, 1, 18, 8, 0, 0, 0),
 					rehearsal_finish_time: new Date(2018, 11, 2, 15, 30, 0, 0), 
 					people_required:[	{name:"Audition Session 4 (Sunday Afternoon)", time:"1:30pm-3:30pm"}]
 					},
-					{rehearsal_start_time: new Date(2018, 11, 9, 16, 00, 0, 0), 
-					rehearsal_finish_time: new Date(2018, 11, 9, 17, 00, 0, 0), 
-					people_required:[	{name:"All Cast and Parents", time:"4:00pm-5:00pm"}]
+					{rehearsal_start_time: new Date(2018, 11, 9, 17, 00, 0, 0), 
+					rehearsal_finish_time: new Date(2018, 11, 9, 18, 00, 0, 0), 
+					people_required:[	{name:"All Cast and Parents", time:"5:00pm-6:00pm"}]
 					}];
 
 
